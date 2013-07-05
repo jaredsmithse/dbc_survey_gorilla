@@ -2,8 +2,7 @@
 <ol>
 <% @surveys.each do |s| %>
   <li>
-  <%= s.survey_name %>
-  <%= s.url %>
+  <a href="/surveys/<%= s.id %>" class="survey-link"><%= s.survey_name %></a>
   </li>
 <% end %>
 <ol>

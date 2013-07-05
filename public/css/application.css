@@ -32,6 +32,10 @@ html, body {
   padding: 10px;
 }
 
+.survey-link {
+  color: white;
+}
+
 #take-surveys {
 	background-color: #2C4019;
 }
