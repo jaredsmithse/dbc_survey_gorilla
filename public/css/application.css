@@ -11,6 +11,7 @@ th {
 html, body {
 	height: 100%;
   background: #95BA41;
+  color: white;
 }
 
 .blades .content {

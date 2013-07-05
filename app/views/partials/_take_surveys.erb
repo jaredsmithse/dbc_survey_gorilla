@@ -1,1 +1,9 @@
 <h2>All Surveys:</h2>
+<ol>
+<% @surveys.each do |s| %>
+  <li>
+  <%= s.survey_name %>
+  <%= s.url %>
+  </li>
+<% end %>
+<ol>
