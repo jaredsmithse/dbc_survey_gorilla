@@ -16,7 +16,7 @@
 <div id="user-surveys-created">
 <h3>Here are the surveys you have created: </h3>
   <ul>
-    <% created_surveys.each do |s| %>
+    <% @created_surveys.each do |s| %>
       <li>
       <%= s.survey_name %>
       <%= s.url %>

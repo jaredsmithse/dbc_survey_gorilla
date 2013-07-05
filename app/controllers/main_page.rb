@@ -1,5 +1,5 @@
 get '/main' do 
-  created_surveys = current_user.surveys
+  @created_surveys = current_user.surveys
 	erb :'partials/_profile'
 end
 
