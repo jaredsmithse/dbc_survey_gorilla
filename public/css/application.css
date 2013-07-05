@@ -13,12 +13,22 @@ html, body {
   background: #95BA41;
 }
 
+button {
+  border-radius: 3px;
+  background: #D0EB4D;
+  border: 2px solid #D0EB4D;
+}
+
+button:hover {
+  border: 2px solid #2C4019;
+}
+
 .blades .content {
   display :none;
 }
 
 .blades.active {
-	width: 63%;
+	width: 58%;
 }
 
 .blades.active .content { display: block;}
@@ -27,7 +37,7 @@ html, body {
 	display: block;
   float: left;
 	min-height: 100%;
-	width: 9%;
+	width: 10%;
   padding: 10px;
 }
 
