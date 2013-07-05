@@ -61,10 +61,10 @@ html, body {
   text-align: left;
   border: none;
   font-family: 'impact', sans-serif;
+  color: #a0a0b0;
 }
 
 #splash_page h1 {
-  color: #a0a0b0;
   position: absolute; left: 20px;
 }
 
