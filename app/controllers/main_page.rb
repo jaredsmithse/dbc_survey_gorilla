@@ -4,11 +4,19 @@ get '/main' do
 end
 
 
+before '/stats' do 
+	redirect '/' unless logged_in?
+end
+
 get '/stats' do 
 
 	erb :'partials/_stats'
 end
 
+
+before '/your_surveys' do 
+	redirect '/' unless logged_in?
+end
 
 get '/your_surveys' do 
 
@@ -16,7 +24,12 @@ get '/your_surveys' do
 end
 
 
+before '/take_surveys' do 
+	redirect '/' unless logged_in?
+end
+
 get '/take_surveys' do 
 
 	erb :'partials/_take_surveys'
 end
+
