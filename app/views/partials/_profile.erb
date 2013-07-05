@@ -2,11 +2,25 @@
 
 <div id="user-surveys-answered">
 <h3>Here are the surveys you have answered: </h3>
-
+<ul>
+  <% answered_surveys.each do |s| %>
+    <li>
+    <%= s.survey_name %>
+    <%= s.url %>
+    </li>
+  <% end %>
+</ul>
 
 </div>
 
 <div id="user-surveys-created">
 <h3>Here are the surveys you have created: </h3>
-
+  <ul>
+    <% created_surveys.each do |s| %>
+      <li>
+      <%= s.survey_name %>
+      <%= s.url %>
+      </li>
+    <% end %>
+  </ul>
 </div>
