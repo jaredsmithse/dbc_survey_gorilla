@@ -11,6 +11,7 @@ th {
 html, body {
 	height: 100%;
   background: #95BA41;
+  color: white;
 }
 
 button {
@@ -41,6 +42,10 @@ button:hover {
   padding: 10px;
 }
 
+.survey-link {
+  color: white;
+}
+
 #take-surveys {
 	background-color: #2C4019;
 }
@@ -66,10 +71,10 @@ button:hover {
   text-align: left;
   border: none;
   font-family: 'impact', sans-serif;
+  color: #a0a0b0;
 }
 
 #splash_page h1 {
-  color: #a0a0b0;
   position: absolute; left: 20px;
 }
 
@@ -83,6 +88,10 @@ form.signin input[type=email], form.signin input[type=password] {
 
 form.signin input[type=submit] {
   width: 63px;
+}
+
+#confirmation {
+  color: #ffffff;
 }
 
 

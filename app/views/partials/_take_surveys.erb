@@ -1,1 +1,8 @@
 <h2>All Surveys:</h2>
+<ol>
+<% @surveys.each do |s| %>
+  <li>
+  <a href="/surveys/<%= s.id %>" class="survey-link"><%= s.survey_name %></a>
+  </li>
+<% end %>
+<ol>

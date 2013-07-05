@@ -1,0 +1,8 @@
+
+<% if @new_user.valid? %>
+  <p id="confirmation">Thank you <%= @new_user.name %>!  You now have an account!</p>
+<% else %>
+  <% @new_user.errors.full_messages.each do |message| %>
+  <p><%= message %></p>
+  <% end %>
+<% end %>
