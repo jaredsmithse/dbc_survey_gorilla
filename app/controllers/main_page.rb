@@ -1,6 +1,6 @@
 get '/main' do 
-  created_surveys = current_user.surveys
-	erb :'partials/_profile'
+  @created_surveys = current_user.surveys
+	erb :main
 end
 
 
@@ -9,7 +9,6 @@ before '/stats' do
 end
 
 get '/stats' do 
-
 	erb :'partials/_stats'
 end
 

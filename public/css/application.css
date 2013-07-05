@@ -12,29 +12,36 @@ html, body {
 	height: 100%;
 }
 
+.blades .content {
+  display :none;
+}
+
 .blades.active {
 	width: 67%;
 }
 
+.blades.active .content { display: block;}
+
 .blades {
-	display: inline-block;
+	display: block;
+  float: left;
 	min-height: 100%;
 	width: 10%;
 }
 
-#blade-1 {
+#take-surveys {
 	background-color: blue;
 }
 
-#blade-2 {
+#profile {
 	background-color: red;
 }
 
-#blade-3 {
+#your-surveys {
 	background-color: green;
 }
 
-#blade-4 {
+#stats {
 	background-color: purple;
 }
 
