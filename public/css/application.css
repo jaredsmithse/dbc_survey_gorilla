@@ -7,3 +7,33 @@
 th {
   text-align: left;
 }
+
+html, body {
+	height: 100%;
+}
+
+.blades.active {
+	width: 67%;
+}
+
+.blades {
+	display: inline-block;
+	min-height: 100%;
+	width: 10%;
+}
+
+#blade-1 {
+	background-color: blue;
+}
+
+#blade-2 {
+	background-color: red;
+}
+
+#blade-3 {
+	background-color: green;
+}
+
+#blade-4 {
+	background-color: purple;
+}
