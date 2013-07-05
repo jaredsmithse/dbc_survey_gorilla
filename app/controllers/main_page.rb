@@ -1,5 +1,6 @@
 get '/main' do 
-
+  answered_surveys = current_user.responses
+  created_surveys = current_user.surveys
 	erb :'partials/_profile'
 end
 
