@@ -37,3 +37,7 @@ html, body {
 #blade-4 {
 	background-color: purple;
 }
+
+#splash_page {
+  background-image: url('../flizzard_vs_gorilla.jpg');
+}

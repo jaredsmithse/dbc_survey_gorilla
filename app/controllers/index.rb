@@ -1,4 +1,4 @@
 get '/' do
   
-  erb :main
+  erb :splash
 end
