@@ -12,5 +12,4 @@ helpers do
   def set_current_user(user_email)
     User.find_by_email(user_email).id
   end
-
 end

@@ -2,6 +2,7 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
   has_many :responses
+  has_many :surveys
   has_many :choices, :through => :responses
 
   validates :email, uniqueness: true

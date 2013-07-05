@@ -38,6 +38,33 @@ html, body {
 	background-color: purple;
 }
 
-#splash_page {
+.container#splash_page {
   background-image: url('../flizzard_vs_gorilla.jpg');
+  width: 800px;
+  height: 600px;
+  padding: 0px;
+  position: relative;
+  text-align: left;
+  border: none;
+  font-family: 'impact', sans-serif;
 }
+
+#splash_page h1 {
+  color: #a0a0b0;
+  position: absolute; left: 20px;
+}
+
+.login_forms {
+  position: absolute; left: 20px; bottom: 20px;
+}
+
+form.signin input[type=email], form.signin input[type=password] {
+  width: 237.5px;
+}
+
+form.signin input[type=submit] {
+  width: 63px;
+}
+
+
+
