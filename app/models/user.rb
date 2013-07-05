@@ -23,7 +23,10 @@ class User < ActiveRecord::Base
     user = User.find_by_email(email)
     return nil if user == nil
     user.password = user_password
-    user if @password == user.password_hash
-    user
+    if @password == user.password_hash 
+      return user 
+    else
+      return nil
+    end
   end
 end
