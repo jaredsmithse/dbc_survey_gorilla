@@ -13,7 +13,7 @@ end
 
 
 post '/signup' do
-  created_user = User.create(email: params[:email],username: params[:username], password: params[:password])
+  created_user = User.create(email: params[:email], name: params[:username], password: params[:password])
   session[:id] = created_user.id
   redirect '/main'
 end
