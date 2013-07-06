@@ -2,7 +2,9 @@ get '/' do
   erb :splash
 end
 
-before '/' do 
+before '/' do
+  @surveys = [] 
+  @created_surveys = [] 
 	erb :main if logged_in?
 end
 

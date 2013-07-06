@@ -35,7 +35,7 @@ $(document).ready(function() {
 				$('#confirmation').html('Invalid Username and Password Combination');
 			}
 			else {
-				response;
+				window.location.replace('/main');
 			}
 		});
 	});
