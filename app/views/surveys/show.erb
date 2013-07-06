@@ -1,1 +1,15 @@
 <h2><%= @survey.survey_name %></h2>
+<ol>
+<% @survey.questions.each do |q| %>
+    <li>
+      <%= q.question_text %>
+      <ul>
+      <% q.choices.each do |c| %>
+        <li>
+          <%= c.answer %>
+        </li>
+      <% end %>
+      </ul>
+    </li>
+<% end %>
+</ol>

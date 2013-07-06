@@ -7,3 +7,8 @@ end
 post '/new_survey' do 
 	erb :'partials/_new_survey', :layout => false
 end
+
+get '/derp' do
+  @params = params
+  erb :derp
+end
