@@ -26,6 +26,10 @@ button:hover {
 
 #question-template { display: none;}
 
+.question-name {
+  width: 225px;
+}
+
 .choice { margin-left: 15px; }
 
 .blades .content { display :none; }
