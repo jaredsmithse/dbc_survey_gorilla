@@ -1,17 +1,35 @@
 function switchOutSurvey(HTMLResponse) {
 	$('.your-survey-content').replaceWith(HTMLResponse);
+	addQuestion();
+}
+
+function addQuestion() {
+	var question = $.trim($('#question-template').html());
+	console.log("AYYYUY");
+	$('.question-list').append(question);
 }
 
 $(document).ready(function() {
+	
 
+	$("body").on('click','button.add', function (e) {
+		e.preventDefault();
+		addQuestion();
+	});
+
+	//switching sizes of the blades
 	$('.blades').on('click', function() { $('.blades').removeClass('active'); $(this).addClass('active'); })
+	
+	//switch out the partial for a new survey
 	$('#create').on('click', function(e) { 
 		var input = $(this).serialize();
 		e.preventDefault();
 		$.post('/new_survey', input, switchOutSurvey); 
+
 	});
 
-	$('.blades').on('click', function() { $('.blades').removeClass('active'); $(this).addClass('active'); })
+
+
 
 	$('form.signup').on('submit', function(e) {
 		e.preventDefault();
@@ -23,6 +41,7 @@ $(document).ready(function() {
 			$('#confirmation').html(response);
 		});
 	});
+
 
 	$('form.signin').on('submit', function(e) {
 		e.preventDefault();

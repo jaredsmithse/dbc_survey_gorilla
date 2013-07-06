@@ -1,26 +1,27 @@
 <div class="your-survey-content">
 	<input name="survey[title]" placeholder="Survey Title">
-	<div class="More Questions">
+	<div class="more-questions">
 		<button class="add">Add Question</button>
 	</div>
 
-	<div class="question-list">
 
-	</div>
-
-	<!-- start of template -->
-	<div id="question-template" style="display: none;">
-		<div class="question">
-			<input name="survey[questions][][question]">
-			<input name="survey[questions][][choices][][choice]">
-  		<input name="survey[questions][][choices][][choice]">
-  		<input name="survey[questions][][choices][][choice]">
-  		<input name="survey[questions][][choices][][choice]">
+	<form>
+		<div class="question-list">
 
 		</div>
-	</div>
-	<!-- end of template -->
-	<form>
+		<button>Create Survey!</button>
 
+		<div id="question-template">
+				<div class="question">
+					<input class="question-name" name="survey[questions][][question]" placeholder="Question Name">
+					<input class="choice" name="survey[questions][][choices][][choice]" placeholder="Choice #1">
+					<input class="choice" name="survey[questions][][choices][][choice]" placeholder="Choice #2">
+					<input class="choice" name="survey[questions][][choices][][choice]" placeholder="Choice #3">
+					<input class="choice" name="survey[questions][][choices][][choice]" placeholder="Choice #4">
+				</div>
+			</div>
 	</form>
+	
+
+	
 </div>

@@ -24,13 +24,13 @@ button:hover {
   border: 2px solid #2C4019;
 }
 
-.blades .content {
-  display :none;
-}
+#question-template { display: none;}
 
-.blades.active {
-	width: 58%;
-}
+.choice { margin-left: 15px; }
+
+.blades .content { display :none; }
+
+.blades.active { width: 58%; }
 
 .blades.active .content { display: block;}
 
@@ -60,6 +60,10 @@ button:hover {
 
 #stats {
 	background-color: #95BA41;
+}
+
+#question {
+  margin-top: 20px;
 }
 
 .container#splash_page {
