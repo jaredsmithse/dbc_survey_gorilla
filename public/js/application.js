@@ -5,7 +5,6 @@ function switchOutSurvey(HTMLResponse) {
 
 function addQuestion() {
 	var question = $.trim($('#question-template').html());
-	console.log("AYYYUY");
 	$('.question-list').append(question);
 }
 
